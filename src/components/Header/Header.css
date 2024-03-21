@@ -1,0 +1,45 @@
+.header{
+  margin: 30px auto;
+  height: 70vh;
+  background: url('../../assets/header_img.png') no-repeat;
+  background-size: contain;
+  border-radius: 30px;
+  position: relative;
+}
+
+.header-contents{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  letter-spacing: 1px;
+  left: 6vw;
+  animation: fadeIn 3s;
+
+  h2{
+    font-size: max(4vw, 22px);
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  p{
+    font-size: max(1vw, 12px);
+    color: white;
+    letter-spacing: 1px;
+  }
+
+  button{
+    border: none;
+    color: rgb(85, 85, 85);
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 30px;
+  }
+}
