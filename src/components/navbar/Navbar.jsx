@@ -1,18 +1,20 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
+import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
-function Navbar() {
+function Navbar({setShowLogin}) {
   const [pageActive, setPageActive] = useState("home");
 
   return (
     <div className='navbar'>
       <img src={assets.logo} alt="" className='logo'/>
       <ul className="navbar-menu">
-        <li className={pageActive==="home" ? "active":""}>Home</li>
-        <li className={pageActive==="menu" ? "active":""}>Menu</li>
-        <li className={pageActive==="mobile-app" ? "active":""}>Mobile App</li>
-        <li className={pageActive==="active" ? "active":""}>Contact Us</li>
+        <Link to={'/'} className={pageActive==="home" ? "active":""}>Home</Link>
+        <HashLink to={'#explore-menu'} className={pageActive==="menu" ? "active":""}>Menu</HashLink>
+        <HashLink to={'#app-download'} className={pageActive==="mobile-app" ? "active":""}>Mobile App</HashLink>
+        <HashLink to={'#footer'} className={pageActive==="active" ? "active":""}>Contact Us</HashLink>
       </ul>
       <div className="navbar-right">
         <img src={assets.search_icon} alt="" />
@@ -20,7 +22,7 @@ function Navbar() {
           <img src={assets.basket_icon} alt="" />
           <div className="dot"></div>
         </div>
-        <button>Sign In</button>
+        <button onClick={()=>setShowLogin(true)}>Sign In</button>
       </div>
     </div>
   )

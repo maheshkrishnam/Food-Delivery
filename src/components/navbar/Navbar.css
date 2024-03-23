@@ -58,3 +58,77 @@
   top: -5px;
   right: -5px;
 }
+
+
+@media (max-width: 1050px){
+  .logo{
+    scale: 0.8;
+  }
+
+  .navbar-menu{
+    gap: 15px;
+    font-size: medium;
+    margin: 0 10px;
+  }
+
+  img{
+    scale: 0.7;
+  }
+
+  button{
+    scale: 0.7;
+  }
+}
+
+@media (max-width: 950px){
+  .logo{
+    scale: 1;
+  }
+
+  .navbar-menu{
+    display: none;
+  }
+
+  img{
+    scale: 1;
+  }
+
+  button{
+    scale: 1;
+  }
+}
+
+
+@media (max-width: 500px){
+  
+  .logo{
+    scale: 0.6;
+  }
+
+  .navbar-menu{
+    display: none;
+  }
+
+  img{
+    scale: 0.5;
+  }
+
+  button{
+    scale: 0.5;
+    width: 80px;
+  }
+
+  .navbar{
+    padding-left: 0;
+    gap: 0;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .navbar-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 0px;
+    scale: 0.9;
+  }
+}

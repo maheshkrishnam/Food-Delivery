@@ -1,0 +1,35 @@
+.app-download{
+  font-size: 45px;
+  color: rgb(72, 72, 72);
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-download-platforms{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 40px;
+
+  img{
+    width: max(30vw, 120px);
+    max-width: 180px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+}
+
+.app-download-platforms img:hover{
+  transform: scale(1.1);
+}
+
+
+@media (max-width:950px){
+  .app-download{
+    font-size: 35px;
+  }
+}
