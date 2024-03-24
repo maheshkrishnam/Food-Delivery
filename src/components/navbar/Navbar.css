@@ -71,49 +71,44 @@
     margin: 0 10px;
   }
 
-  img{
+  .navbar img{
     scale: 0.7;
   }
 
-  button{
+  .navbar button{
     scale: 0.7;
   }
 }
 
 @media (max-width: 950px){
   .logo{
-    scale: 1;
+    scale: 0.8;
   }
 
   .navbar-menu{
     display: none;
   }
 
-  img{
+  .navbar img{
     scale: 1;
   }
 
-  button{
+  .navbar button{
     scale: 1;
   }
 }
 
 
-@media (max-width: 500px){
-  
-  .logo{
-    scale: 0.6;
-  }
-
+@media (max-width: 600px){
   .navbar-menu{
     display: none;
   }
 
-  img{
-    scale: 0.5;
+  .navbar img{
+    scale: 0.7;
   }
 
-  button{
+  .navbar button{
     scale: 0.5;
     width: 80px;
   }
@@ -130,5 +125,11 @@
     grid-template-columns: 1fr 1fr 2fr;
     gap: 0px;
     scale: 0.9;
+  }
+}
+
+@media (max-width:450px){
+  .navbar img{
+    width: 20px;
   }
 }
