@@ -37,3 +37,27 @@
   padding: 10px 0;
   width: 400px;
 }
+
+
+@media (max-width: 1200px){
+  .place-order{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px){
+  .place-order{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+    input{
+      width: 250px;
+      height: 40px;
+    }
+  }
+}
